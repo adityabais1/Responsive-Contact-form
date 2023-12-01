@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+body{
+    scroll-behavior: smooth;
+}
+:root{
+    --purple : #28044a;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(175, 210, 210);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FORM{
+    width: 70vw;
+    height: 70vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 40px 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.384);
+
+}
+.seprationLine{
+    height: 70%;
+    width: 1px;
+    background-color: var(--purple);
+}
+
+
+
+
+
+
+
+
+
+.orgContactInfo{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.infobox{
+    height: 100px;
+    width: 150px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+.infobox .icon img{
+    height: 30px;
+}
+.infobox .icon{
+    padding-bottom: 3px;
+}
+.infobox .head{
+    font-size: 16px;
+    font-weight: 500;
+}
+.infobox .text{
+    color: rgba(0, 0, 0, 0.686);
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+.messageDetails{
+    width: 70%;
+    height: 100%;
+    padding: 0 70px;
+}
+.text1{
+    font-size: 26px;
+    font-weight: 600;
+    color: #28044a;
+}
+.text2{
+    color: rgba(0, 0, 0, 0.633);
+    margin-top: 5px;
+}
+.messageDetails input , textarea{
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f6ebff;
+    padding: 0 10px;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+    resize: none;
+}
+#sendNow{
+    height: 40px;
+    width: 120px;
+    border-radius: 3px;
+    border: none;
+    background-color: #28044a;
+    color: white;
+    font-size: 17px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#sendNow:hover{
+    background-color: #3a066b;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1130px) {
+  .FORM{
+    flex-direction: column-reverse;
+    height: fit-content;
+    margin: 30px 0;
+  }
+  main{
+    height: fit-content;
+  }
+  .seprationLine{
+    width: 70%;
+    height: 1px;
+    margin: 40px 0;
+}
+.messageDetails{
+    padding: 0;
+}
+.orgContactInfo{
+    flex-direction: row;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.infobox{
+    height: 130px;
+    width: 215px;
+    /* border: 1px solid black; */
+    padding: 15px 15px 0 0;
+}
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .FORM{
+        width: 90%;
+    }
+}
