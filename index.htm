@@ -43,9 +43,15 @@
 
                 <div class="text1">Send us a message</div>
                 <div class="text2">Need assistance or have questions about my tutorials? Shoot me a message here—I'm here to help and make your learning journey a breeze!</div>
-                <input type="text" name="UserName" class="userName" placeholder="Enter your full name" id="userName">
-                <input type="email" name="Email" class="userEmail" name="message" placeholder="Enter your email" id="email">
-                <textarea placeholder="Enter your message" class="userMessage" id="message" name="UserMessage"></textarea>
+                <input type="text" name="UserName" class="userName" placeholder="Enter your full name" id="userName" required>
+
+
+                <input type="email" name="Email" class="userEmail" name="message" placeholder="Enter your email" id="email" required>
+
+                <textarea placeholder="Enter your message" class="userMessage" id="message" name="UserMessage" required></textarea>
+
+
+
                 <button type="submit" id="sendNow">Send Now</button>
 
             </form>
