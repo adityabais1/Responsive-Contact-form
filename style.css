@@ -111,7 +111,7 @@ textarea{
     padding-top: 10px;
     resize: none;
 }
-#sendNow{
+#sendNow, #resetBtn{
     height: 40px;
     width: 120px;
     border-radius: 3px;
@@ -122,8 +122,11 @@ textarea{
     margin-top: 20px;
     cursor: pointer;
 }
-#sendNow:hover{
+#sendNow:hover, #resetBtn:hover{
     background-color: #3a066b;
+}
+#resetBtn{
+    margin-left: 20px;
 }
 
 
@@ -170,5 +173,11 @@ textarea{
 @media screen and (max-width: 900px) {
     .FORM{
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 437.6px){
+    #resetBtn{
+        margin-left: 0px;
     }
 }
